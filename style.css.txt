@@ -1,0 +1,238 @@
+/* style.css */
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+header { background: #222; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+header a { color: white; text-decoration: none; margin-left: 15px; }
+nav a:hover { color: #ddd; text-decoration: underline; }
+
+.container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+h1, h2 { color: #222; }
+
+/* Grid for Shop Page */
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+.card { border: 1px solid #ddd; padding: 15px; text-align: center; border-radius: 5px; }
+.card img { max-width: 100%; height: 150px; object-fit: contain; }
+.btn { display: inline-block; background: #007bff; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+.btn:hover { background: #0056b3; }
+
+/* Product Detail Page */
+.product-detail { display: flex; gap: 40px; }
+.product-detail img { max-width: 400px; }
+.price { font-size: 24px; color: green; font-weight: bold; }
+
+/* Form Styles */
+input, textarea { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container" style="text-align: center; padding: 50px;">
+        <h1>Welcome to My E-Commerce Store</h1>
+        <p>We sell the best products for the best prices.</p>
+        <br>
+        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" style="height: 300px;">
+        <br><br>
+        <a href="shop.html" class="btn">Browse Products</a>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop All Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>All Products</h1>
+        <div class="product-grid">
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+                <h3>Blue Backpack</h3>
+                <p>$109.95</p>
+                <a href="product1.html" class="btn">View Details</a>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg">
+                <h3>Casual T-Shirt</h3>
+                <p>$22.30</p>
+                <a href="product2.html" class="btn">View Details</a>
+            </div>
+            <div class="card">
+                <img src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg">
+                <h3>Mens Cotton Jacket</h3>
+                <p>$55.99</p>
+                <a href="product3.html" class="btn">View Details</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="shop.html" style="color: #666;">&larr; Back to Shop</a>
+        <br><br>
+        
+        <div class="product-detail">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            
+            <div>
+                <h1>Blue Backpack</h1>
+                <p class="price">$109.95</p>
+                <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday.</p>
+                
+                <br>
+                <button class="btn" onclick="alert('Added to Cart!')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="shop.html" style="color: #666;">&larr; Back to Shop</a>
+        <br><br>
+        
+        <div class="product-detail">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            
+            <div>
+                <h1>Blue Backpack</h1>
+                <p class="price">$109.95</p>
+                <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday.</p>
+                
+                <br>
+                <button class="btn" onclick="alert('Added to Cart!')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <a href="shop.html" style="color: #666;">&larr; Back to Shop</a>
+        <br><br>
+        
+        <div class="product-detail">
+            <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg">
+            
+            <div>
+                <h1>Blue Backpack</h1>
+                <p class="price">$109.95</p>
+                <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday.</p>
+                
+                <br>
+                <button class="btn" onclick="alert('Added to Cart!')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyStore</div>
+        <nav><a href="index.html">Home</a></nav>
+    </header>
+    <div class="container">
+        <h1>About Our Company</h1>
+        <p>We were founded in 2024 with a simple mission: to provide high-quality items at affordable prices.</p>
+        <p>We are located in New York City.</p>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyStore</div>
+        <nav><a href="index.html">Home</a></nav>
+    </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Your Name">
+            <label>Message:</label>
+            <textarea rows="5" placeholder="How can we help?"></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
